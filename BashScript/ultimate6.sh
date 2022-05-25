@@ -167,6 +167,7 @@ cal5 () {
 
         *)
             echo "## Phép tính không hợp lệ, vui lòng chọn lại phép tính ##"
+            ;;
         esac
     }
 
@@ -218,6 +219,7 @@ caseVO () {
 
         *)
             echo "## Chương trình không hợp lệ, vui lòng chọn lại ##"
+            ;;
     esac
 }
 
