@@ -14,9 +14,9 @@ then
 elif [ $N -gt 2 ]
 then
     x=1
+    S=`echo "1/1 + 1/2" | bc -l`
     for (( i=3 ; i<=N ; i++ ))
     do
-        S=`echo "1/1 + 1/2" | bc -l`
         x=$(( $x * -1 ))
         y=$(( $x * $i ))
         S=`echo "$S + 1/$y" | bc -l`
